@@ -72,7 +72,7 @@ tagsRouter.get('/tagfeed', function (req, res, next) {
     Tag.find({id:req.query.id}).populate({
         path:'recipes_feed',
         options: {
-            limit: 1,
+            limit: 10,
             //sort: { created: -1},
             skip: req.params.from
     
