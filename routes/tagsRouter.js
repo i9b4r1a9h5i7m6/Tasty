@@ -51,7 +51,7 @@ tagsRouter.route('/job')
         Recipe.find({}, function (err, recipies) {
             recipies.forEach(recipe => {
                 recipe.tags.forEach(tag => {
-                    Tag.findOneAndUpdate({ id: tag.id }, { $addToSet: {recipes_feed:recipe._id} }, function (err, tagg) {
+                    Tag.findOneAndUpdate({ id: tag.id }, { $addToSet: { recipes_feed: recipe._id } }, function (err, tagg) {
                         if (err) throw err;
                         console.log(recipe._id)
                         console.log("working for" + i)
@@ -64,5 +64,24 @@ tagsRouter.route('/job')
             res.json(recipies[0].id)
         });
     })
+
+
+
+tagsRouter.get('/tagfeed', function (req, res, next) {
+    console.log("here")
+    Tag.find({id:req.query.id}).populate({
+        path:'recipes_feed',
+        options: {
+            limit: 10,
+            //sort: { created: -1},
+            skip: req.params.from
+    
+        }
+    }).exec((err, posts) => {
+        //console.log("Populated User " + posts);
+        res.json(posts)
+      })
+      
+});
 
 module.exports = tagsRouter;

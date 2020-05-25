@@ -147,19 +147,6 @@ recipeRouter.get('/tag/', function (req, res, next) {
 
 
 
-recipeRouter.get('/tagfeed', function (req, res, next) {
-    Recipe.find({}, function (err, categories) {
-        if (err) console.log('Something wrong with Categories.find');
-        res.json(categories);
-    });
-
-});
-
-
-
-
-
-
 
 
 module.exports = recipeRouter;
