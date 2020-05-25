@@ -1,0 +1,2437 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "approved_at": {
+        "type": "integer"
+      },
+      "aspect_ratio": {
+        "type": "string"
+      },
+      "beauty_url": {
+        "type": "null"
+      },
+      "brand_id": {
+        "type": "integer"
+      },
+      "buzz_id": {
+        "type": "null"
+      },
+      "cook_time_minutes": {
+        "type": "null"
+      },
+      "country": {
+        "type": "string"
+      },
+      "created_at": {
+        "type": "integer"
+      },
+      "description": {
+        "type": "string"
+      },
+      "draft_status": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer"
+      },
+      "inspired_by_url": {
+        "type": "null"
+      },
+      "is_one_top": {
+        "type": "boolean"
+      },
+      "is_shoppable": {
+        "type": "boolean"
+      },
+      "keywords": {
+        "type": "string"
+      },
+      "language": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "num_servings": {
+        "type": "integer"
+      },
+      "prep_time_minutes": {
+        "type": "null"
+      },
+      "promotion": {
+        "type": "string"
+      },
+      "seo_title": {
+        "type": "string"
+      },
+      "servings_noun_plural": {
+        "type": "string"
+      },
+      "servings_noun_singular": {
+        "type": "string"
+      },
+      "show_id": {
+        "type": "integer"
+      },
+      "slug": {
+        "type": "string"
+      },
+      "thumbnail_url": {
+        "type": "string"
+      },
+      "tips_and_ratings_enabled": {
+        "type": "boolean"
+      },
+      "total_time_minutes": {
+        "type": "null"
+      },
+      "updated_at": {
+        "type": "integer"
+      },
+      "video_id": {
+        "type": "integer"
+      },
+      "video_url": {
+        "type": "string"
+      },
+      "yields": {
+        "type": "string"
+      },
+      "nutrition_visibility": {
+        "type": "string"
+      },
+      "compilations": {
+        "type": "array",
+        "items": {}
+      },
+      "brand": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "image_url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "slug",
+          "image_url"
+        ]
+      },
+      "total_time_tier": {
+        "type": "object",
+        "properties": {
+          "tier": {
+            "type": "string"
+          },
+          "display_tier": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "tier",
+          "display_tier"
+        ]
+      },
+      "instructions": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "display_text": {
+                "type": "string"
+              },
+              "position": {
+                "type": "integer"
+              },
+              "start_time": {
+                "type": "integer"
+              },
+              "end_time": {
+                "type": "integer"
+              },
+              "temperature": {
+                "type": "null"
+              },
+              "appliance": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "id",
+              "display_text",
+              "position",
+              "start_time",
+              "end_time",
+              "temperature",
+              "appliance"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "display_text": {
+                "type": "string"
+              },
+              "position": {
+                "type": "integer"
+              },
+              "start_time": {
+                "type": "integer"
+              },
+              "end_time": {
+                "type": "integer"
+              },
+              "temperature": {
+                "type": "null"
+              },
+              "appliance": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "id",
+              "display_text",
+              "position",
+              "start_time",
+              "end_time",
+              "temperature",
+              "appliance"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "display_text": {
+                "type": "string"
+              },
+              "position": {
+                "type": "integer"
+              },
+              "start_time": {
+                "type": "integer"
+              },
+              "end_time": {
+                "type": "integer"
+              },
+              "temperature": {
+                "type": "null"
+              },
+              "appliance": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "id",
+              "display_text",
+              "position",
+              "start_time",
+              "end_time",
+              "temperature",
+              "appliance"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "display_text": {
+                "type": "string"
+              },
+              "position": {
+                "type": "integer"
+              },
+              "start_time": {
+                "type": "integer"
+              },
+              "end_time": {
+                "type": "integer"
+              },
+              "temperature": {
+                "type": "null"
+              },
+              "appliance": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "id",
+              "display_text",
+              "position",
+              "start_time",
+              "end_time",
+              "temperature",
+              "appliance"
+            ]
+          }
+        ]
+      },
+      "sections": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "components": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer"
+                      },
+                      "raw_text": {
+                        "type": "string"
+                      },
+                      "extra_comment": {
+                        "type": "string"
+                      },
+                      "position": {
+                        "type": "integer"
+                      },
+                      "measurements": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "integer"
+                              },
+                              "quantity": {
+                                "type": "string"
+                              },
+                              "unit": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "abbreviation": {
+                                    "type": "string"
+                                  },
+                                  "display_singular": {
+                                    "type": "string"
+                                  },
+                                  "display_plural": {
+                                    "type": "string"
+                                  },
+                                  "system": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "abbreviation",
+                                  "display_singular",
+                                  "display_plural",
+                                  "system"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "quantity",
+                              "unit"
+                            ]
+                          }
+                        ]
+                      },
+                      "ingredient": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "integer"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "display_singular": {
+                            "type": "string"
+                          },
+                          "display_plural": {
+                            "type": "string"
+                          },
+                          "created_at": {
+                            "type": "integer"
+                          },
+                          "updated_at": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "name",
+                          "display_singular",
+                          "display_plural",
+                          "created_at",
+                          "updated_at"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "raw_text",
+                      "extra_comment",
+                      "position",
+                      "measurements",
+                      "ingredient"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer"
+                      },
+                      "raw_text": {
+                        "type": "string"
+                      },
+                      "extra_comment": {
+                        "type": "string"
+                      },
+                      "position": {
+                        "type": "integer"
+                      },
+                      "measurements": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "integer"
+                              },
+                              "quantity": {
+                                "type": "string"
+                              },
+                              "unit": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "abbreviation": {
+                                    "type": "string"
+                                  },
+                                  "display_singular": {
+                                    "type": "string"
+                                  },
+                                  "display_plural": {
+                                    "type": "string"
+                                  },
+                                  "system": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "abbreviation",
+                                  "display_singular",
+                                  "display_plural",
+                                  "system"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "quantity",
+                              "unit"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "integer"
+                              },
+                              "quantity": {
+                                "type": "string"
+                              },
+                              "unit": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "abbreviation": {
+                                    "type": "string"
+                                  },
+                                  "display_singular": {
+                                    "type": "string"
+                                  },
+                                  "display_plural": {
+                                    "type": "string"
+                                  },
+                                  "system": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "abbreviation",
+                                  "display_singular",
+                                  "display_plural",
+                                  "system"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "quantity",
+                              "unit"
+                            ]
+                          }
+                        ]
+                      },
+                      "ingredient": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "integer"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "display_singular": {
+                            "type": "string"
+                          },
+                          "display_plural": {
+                            "type": "string"
+                          },
+                          "created_at": {
+                            "type": "integer"
+                          },
+                          "updated_at": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "name",
+                          "display_singular",
+                          "display_plural",
+                          "created_at",
+                          "updated_at"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "raw_text",
+                      "extra_comment",
+                      "position",
+                      "measurements",
+                      "ingredient"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer"
+                      },
+                      "raw_text": {
+                        "type": "string"
+                      },
+                      "extra_comment": {
+                        "type": "string"
+                      },
+                      "position": {
+                        "type": "integer"
+                      },
+                      "measurements": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "integer"
+                              },
+                              "quantity": {
+                                "type": "string"
+                              },
+                              "unit": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "abbreviation": {
+                                    "type": "string"
+                                  },
+                                  "display_singular": {
+                                    "type": "string"
+                                  },
+                                  "display_plural": {
+                                    "type": "string"
+                                  },
+                                  "system": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "abbreviation",
+                                  "display_singular",
+                                  "display_plural",
+                                  "system"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "quantity",
+                              "unit"
+                            ]
+                          }
+                        ]
+                      },
+                      "ingredient": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "integer"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "display_singular": {
+                            "type": "string"
+                          },
+                          "display_plural": {
+                            "type": "string"
+                          },
+                          "created_at": {
+                            "type": "integer"
+                          },
+                          "updated_at": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "name",
+                          "display_singular",
+                          "display_plural",
+                          "created_at",
+                          "updated_at"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "raw_text",
+                      "extra_comment",
+                      "position",
+                      "measurements",
+                      "ingredient"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer"
+                      },
+                      "raw_text": {
+                        "type": "string"
+                      },
+                      "extra_comment": {
+                        "type": "string"
+                      },
+                      "position": {
+                        "type": "integer"
+                      },
+                      "measurements": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "integer"
+                              },
+                              "quantity": {
+                                "type": "string"
+                              },
+                              "unit": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "abbreviation": {
+                                    "type": "string"
+                                  },
+                                  "display_singular": {
+                                    "type": "string"
+                                  },
+                                  "display_plural": {
+                                    "type": "string"
+                                  },
+                                  "system": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "abbreviation",
+                                  "display_singular",
+                                  "display_plural",
+                                  "system"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "quantity",
+                              "unit"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "integer"
+                              },
+                              "quantity": {
+                                "type": "string"
+                              },
+                              "unit": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "abbreviation": {
+                                    "type": "string"
+                                  },
+                                  "display_singular": {
+                                    "type": "string"
+                                  },
+                                  "display_plural": {
+                                    "type": "string"
+                                  },
+                                  "system": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "abbreviation",
+                                  "display_singular",
+                                  "display_plural",
+                                  "system"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "quantity",
+                              "unit"
+                            ]
+                          }
+                        ]
+                      },
+                      "ingredient": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "integer"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "display_singular": {
+                            "type": "string"
+                          },
+                          "display_plural": {
+                            "type": "string"
+                          },
+                          "created_at": {
+                            "type": "integer"
+                          },
+                          "updated_at": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "name",
+                          "display_singular",
+                          "display_plural",
+                          "created_at",
+                          "updated_at"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "raw_text",
+                      "extra_comment",
+                      "position",
+                      "measurements",
+                      "ingredient"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer"
+                      },
+                      "raw_text": {
+                        "type": "string"
+                      },
+                      "extra_comment": {
+                        "type": "string"
+                      },
+                      "position": {
+                        "type": "integer"
+                      },
+                      "measurements": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "integer"
+                              },
+                              "quantity": {
+                                "type": "string"
+                              },
+                              "unit": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "abbreviation": {
+                                    "type": "string"
+                                  },
+                                  "display_singular": {
+                                    "type": "string"
+                                  },
+                                  "display_plural": {
+                                    "type": "string"
+                                  },
+                                  "system": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "abbreviation",
+                                  "display_singular",
+                                  "display_plural",
+                                  "system"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "quantity",
+                              "unit"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "integer"
+                              },
+                              "quantity": {
+                                "type": "string"
+                              },
+                              "unit": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "abbreviation": {
+                                    "type": "string"
+                                  },
+                                  "display_singular": {
+                                    "type": "string"
+                                  },
+                                  "display_plural": {
+                                    "type": "string"
+                                  },
+                                  "system": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "abbreviation",
+                                  "display_singular",
+                                  "display_plural",
+                                  "system"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "quantity",
+                              "unit"
+                            ]
+                          }
+                        ]
+                      },
+                      "ingredient": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "integer"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "display_singular": {
+                            "type": "string"
+                          },
+                          "display_plural": {
+                            "type": "string"
+                          },
+                          "created_at": {
+                            "type": "integer"
+                          },
+                          "updated_at": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "name",
+                          "display_singular",
+                          "display_plural",
+                          "created_at",
+                          "updated_at"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "raw_text",
+                      "extra_comment",
+                      "position",
+                      "measurements",
+                      "ingredient"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer"
+                      },
+                      "raw_text": {
+                        "type": "string"
+                      },
+                      "extra_comment": {
+                        "type": "string"
+                      },
+                      "position": {
+                        "type": "integer"
+                      },
+                      "measurements": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "integer"
+                              },
+                              "quantity": {
+                                "type": "string"
+                              },
+                              "unit": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "abbreviation": {
+                                    "type": "string"
+                                  },
+                                  "display_singular": {
+                                    "type": "string"
+                                  },
+                                  "display_plural": {
+                                    "type": "string"
+                                  },
+                                  "system": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "abbreviation",
+                                  "display_singular",
+                                  "display_plural",
+                                  "system"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "quantity",
+                              "unit"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "integer"
+                              },
+                              "quantity": {
+                                "type": "string"
+                              },
+                              "unit": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "abbreviation": {
+                                    "type": "string"
+                                  },
+                                  "display_singular": {
+                                    "type": "string"
+                                  },
+                                  "display_plural": {
+                                    "type": "string"
+                                  },
+                                  "system": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "abbreviation",
+                                  "display_singular",
+                                  "display_plural",
+                                  "system"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "quantity",
+                              "unit"
+                            ]
+                          }
+                        ]
+                      },
+                      "ingredient": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "integer"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "display_singular": {
+                            "type": "string"
+                          },
+                          "display_plural": {
+                            "type": "string"
+                          },
+                          "created_at": {
+                            "type": "integer"
+                          },
+                          "updated_at": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "name",
+                          "display_singular",
+                          "display_plural",
+                          "created_at",
+                          "updated_at"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "raw_text",
+                      "extra_comment",
+                      "position",
+                      "measurements",
+                      "ingredient"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer"
+                      },
+                      "raw_text": {
+                        "type": "string"
+                      },
+                      "extra_comment": {
+                        "type": "string"
+                      },
+                      "position": {
+                        "type": "integer"
+                      },
+                      "measurements": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "integer"
+                              },
+                              "quantity": {
+                                "type": "string"
+                              },
+                              "unit": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "abbreviation": {
+                                    "type": "string"
+                                  },
+                                  "display_singular": {
+                                    "type": "string"
+                                  },
+                                  "display_plural": {
+                                    "type": "string"
+                                  },
+                                  "system": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "abbreviation",
+                                  "display_singular",
+                                  "display_plural",
+                                  "system"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "quantity",
+                              "unit"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "integer"
+                              },
+                              "quantity": {
+                                "type": "string"
+                              },
+                              "unit": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "abbreviation": {
+                                    "type": "string"
+                                  },
+                                  "display_singular": {
+                                    "type": "string"
+                                  },
+                                  "display_plural": {
+                                    "type": "string"
+                                  },
+                                  "system": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "abbreviation",
+                                  "display_singular",
+                                  "display_plural",
+                                  "system"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "quantity",
+                              "unit"
+                            ]
+                          }
+                        ]
+                      },
+                      "ingredient": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "integer"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "display_singular": {
+                            "type": "string"
+                          },
+                          "display_plural": {
+                            "type": "string"
+                          },
+                          "created_at": {
+                            "type": "integer"
+                          },
+                          "updated_at": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "name",
+                          "display_singular",
+                          "display_plural",
+                          "created_at",
+                          "updated_at"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "raw_text",
+                      "extra_comment",
+                      "position",
+                      "measurements",
+                      "ingredient"
+                    ]
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "position": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "components",
+              "name",
+              "position"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "components": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer"
+                      },
+                      "raw_text": {
+                        "type": "string"
+                      },
+                      "extra_comment": {
+                        "type": "string"
+                      },
+                      "position": {
+                        "type": "integer"
+                      },
+                      "measurements": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "integer"
+                              },
+                              "quantity": {
+                                "type": "string"
+                              },
+                              "unit": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "abbreviation": {
+                                    "type": "string"
+                                  },
+                                  "display_singular": {
+                                    "type": "string"
+                                  },
+                                  "display_plural": {
+                                    "type": "string"
+                                  },
+                                  "system": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "abbreviation",
+                                  "display_singular",
+                                  "display_plural",
+                                  "system"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "quantity",
+                              "unit"
+                            ]
+                          }
+                        ]
+                      },
+                      "ingredient": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "integer"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "display_singular": {
+                            "type": "string"
+                          },
+                          "display_plural": {
+                            "type": "string"
+                          },
+                          "created_at": {
+                            "type": "integer"
+                          },
+                          "updated_at": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "name",
+                          "display_singular",
+                          "display_plural",
+                          "created_at",
+                          "updated_at"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "raw_text",
+                      "extra_comment",
+                      "position",
+                      "measurements",
+                      "ingredient"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer"
+                      },
+                      "raw_text": {
+                        "type": "string"
+                      },
+                      "extra_comment": {
+                        "type": "string"
+                      },
+                      "position": {
+                        "type": "integer"
+                      },
+                      "measurements": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "integer"
+                              },
+                              "quantity": {
+                                "type": "string"
+                              },
+                              "unit": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "abbreviation": {
+                                    "type": "string"
+                                  },
+                                  "display_singular": {
+                                    "type": "string"
+                                  },
+                                  "display_plural": {
+                                    "type": "string"
+                                  },
+                                  "system": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "abbreviation",
+                                  "display_singular",
+                                  "display_plural",
+                                  "system"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "quantity",
+                              "unit"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "integer"
+                              },
+                              "quantity": {
+                                "type": "string"
+                              },
+                              "unit": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "abbreviation": {
+                                    "type": "string"
+                                  },
+                                  "display_singular": {
+                                    "type": "string"
+                                  },
+                                  "display_plural": {
+                                    "type": "string"
+                                  },
+                                  "system": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "abbreviation",
+                                  "display_singular",
+                                  "display_plural",
+                                  "system"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "quantity",
+                              "unit"
+                            ]
+                          }
+                        ]
+                      },
+                      "ingredient": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "integer"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "display_singular": {
+                            "type": "string"
+                          },
+                          "display_plural": {
+                            "type": "string"
+                          },
+                          "created_at": {
+                            "type": "integer"
+                          },
+                          "updated_at": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "name",
+                          "display_singular",
+                          "display_plural",
+                          "created_at",
+                          "updated_at"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "raw_text",
+                      "extra_comment",
+                      "position",
+                      "measurements",
+                      "ingredient"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer"
+                      },
+                      "raw_text": {
+                        "type": "string"
+                      },
+                      "extra_comment": {
+                        "type": "string"
+                      },
+                      "position": {
+                        "type": "integer"
+                      },
+                      "measurements": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "integer"
+                              },
+                              "quantity": {
+                                "type": "string"
+                              },
+                              "unit": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "abbreviation": {
+                                    "type": "string"
+                                  },
+                                  "display_singular": {
+                                    "type": "string"
+                                  },
+                                  "display_plural": {
+                                    "type": "string"
+                                  },
+                                  "system": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "abbreviation",
+                                  "display_singular",
+                                  "display_plural",
+                                  "system"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "quantity",
+                              "unit"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "integer"
+                              },
+                              "quantity": {
+                                "type": "string"
+                              },
+                              "unit": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "abbreviation": {
+                                    "type": "string"
+                                  },
+                                  "display_singular": {
+                                    "type": "string"
+                                  },
+                                  "display_plural": {
+                                    "type": "string"
+                                  },
+                                  "system": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "abbreviation",
+                                  "display_singular",
+                                  "display_plural",
+                                  "system"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "quantity",
+                              "unit"
+                            ]
+                          }
+                        ]
+                      },
+                      "ingredient": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "integer"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "display_singular": {
+                            "type": "string"
+                          },
+                          "display_plural": {
+                            "type": "string"
+                          },
+                          "created_at": {
+                            "type": "integer"
+                          },
+                          "updated_at": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "name",
+                          "display_singular",
+                          "display_plural",
+                          "created_at",
+                          "updated_at"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "raw_text",
+                      "extra_comment",
+                      "position",
+                      "measurements",
+                      "ingredient"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer"
+                      },
+                      "raw_text": {
+                        "type": "string"
+                      },
+                      "extra_comment": {
+                        "type": "string"
+                      },
+                      "position": {
+                        "type": "integer"
+                      },
+                      "measurements": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "integer"
+                              },
+                              "quantity": {
+                                "type": "string"
+                              },
+                              "unit": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "abbreviation": {
+                                    "type": "string"
+                                  },
+                                  "display_singular": {
+                                    "type": "string"
+                                  },
+                                  "display_plural": {
+                                    "type": "string"
+                                  },
+                                  "system": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "abbreviation",
+                                  "display_singular",
+                                  "display_plural",
+                                  "system"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "quantity",
+                              "unit"
+                            ]
+                          }
+                        ]
+                      },
+                      "ingredient": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "integer"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "display_singular": {
+                            "type": "string"
+                          },
+                          "display_plural": {
+                            "type": "string"
+                          },
+                          "created_at": {
+                            "type": "integer"
+                          },
+                          "updated_at": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "name",
+                          "display_singular",
+                          "display_plural",
+                          "created_at",
+                          "updated_at"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "raw_text",
+                      "extra_comment",
+                      "position",
+                      "measurements",
+                      "ingredient"
+                    ]
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "position": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "components",
+              "name",
+              "position"
+            ]
+          }
+        ]
+      },
+      "tags": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "display_name": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "display_name",
+              "type"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "display_name": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "display_name",
+              "type"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "display_name": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "display_name",
+              "type"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "display_name": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "display_name",
+              "type"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "display_name": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "display_name",
+              "type"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "display_name": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "display_name",
+              "type"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "display_name": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "display_name",
+              "type"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "display_name": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "display_name",
+              "type"
+            ]
+          }
+        ]
+      },
+      "user_ratings": {
+        "type": "object",
+        "properties": {
+          "count_positive": {
+            "type": "integer"
+          },
+          "count_negative": {
+            "type": "integer"
+          },
+          "score": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "count_positive",
+          "count_negative",
+          "score"
+        ]
+      },
+      "credits": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "slug": {
+                "type": "string"
+              },
+              "image_url": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "slug",
+              "image_url",
+              "type"
+            ]
+          }
+        ]
+      },
+      "original_video_url": {
+        "type": "string"
+      },
+      "video_ad_content": {
+        "type": "string"
+      },
+      "canonical_id": {
+        "type": "string"
+      },
+      "show": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
+      },
+      "facebook_posts": {
+        "type": "array",
+        "items": {}
+      },
+      "renditions": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "height": {
+                "type": "integer"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "duration": {
+                "type": "integer"
+              },
+              "file_size": {
+                "type": "integer"
+              },
+              "bit_rate": {
+                "type": "integer"
+              },
+              "maximum_bit_rate": {
+                "type": "null"
+              },
+              "minimum_bit_rate": {
+                "type": "null"
+              },
+              "content_type": {
+                "type": "string"
+              },
+              "aspect": {
+                "type": "string"
+              },
+              "container": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "poster_url": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "height",
+              "width",
+              "duration",
+              "file_size",
+              "bit_rate",
+              "maximum_bit_rate",
+              "minimum_bit_rate",
+              "content_type",
+              "aspect",
+              "container",
+              "url",
+              "poster_url",
+              "name"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "height": {
+                "type": "integer"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "duration": {
+                "type": "integer"
+              },
+              "file_size": {
+                "type": "integer"
+              },
+              "bit_rate": {
+                "type": "integer"
+              },
+              "maximum_bit_rate": {
+                "type": "null"
+              },
+              "minimum_bit_rate": {
+                "type": "null"
+              },
+              "content_type": {
+                "type": "string"
+              },
+              "aspect": {
+                "type": "string"
+              },
+              "container": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "poster_url": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "height",
+              "width",
+              "duration",
+              "file_size",
+              "bit_rate",
+              "maximum_bit_rate",
+              "minimum_bit_rate",
+              "content_type",
+              "aspect",
+              "container",
+              "url",
+              "poster_url",
+              "name"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "height": {
+                "type": "integer"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "duration": {
+                "type": "integer"
+              },
+              "file_size": {
+                "type": "integer"
+              },
+              "bit_rate": {
+                "type": "integer"
+              },
+              "maximum_bit_rate": {
+                "type": "null"
+              },
+              "minimum_bit_rate": {
+                "type": "null"
+              },
+              "content_type": {
+                "type": "string"
+              },
+              "aspect": {
+                "type": "string"
+              },
+              "container": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "poster_url": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "height",
+              "width",
+              "duration",
+              "file_size",
+              "bit_rate",
+              "maximum_bit_rate",
+              "minimum_bit_rate",
+              "content_type",
+              "aspect",
+              "container",
+              "url",
+              "poster_url",
+              "name"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "height": {
+                "type": "integer"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "duration": {
+                "type": "integer"
+              },
+              "file_size": {
+                "type": "integer"
+              },
+              "bit_rate": {
+                "type": "integer"
+              },
+              "maximum_bit_rate": {
+                "type": "null"
+              },
+              "minimum_bit_rate": {
+                "type": "null"
+              },
+              "content_type": {
+                "type": "string"
+              },
+              "aspect": {
+                "type": "string"
+              },
+              "container": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "poster_url": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "height",
+              "width",
+              "duration",
+              "file_size",
+              "bit_rate",
+              "maximum_bit_rate",
+              "minimum_bit_rate",
+              "content_type",
+              "aspect",
+              "container",
+              "url",
+              "poster_url",
+              "name"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "height": {
+                "type": "integer"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "duration": {
+                "type": "integer"
+              },
+              "file_size": {
+                "type": "null"
+              },
+              "bit_rate": {
+                "type": "null"
+              },
+              "maximum_bit_rate": {
+                "type": "integer"
+              },
+              "minimum_bit_rate": {
+                "type": "integer"
+              },
+              "content_type": {
+                "type": "string"
+              },
+              "aspect": {
+                "type": "string"
+              },
+              "container": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "poster_url": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "height",
+              "width",
+              "duration",
+              "file_size",
+              "bit_rate",
+              "maximum_bit_rate",
+              "minimum_bit_rate",
+              "content_type",
+              "aspect",
+              "container",
+              "url",
+              "poster_url",
+              "name"
+            ]
+          }
+        ]
+      },
+      "nutrition": {
+        "type": "object",
+        "properties": {
+          "calories": {
+            "type": "integer"
+          },
+          "carbohydrates": {
+            "type": "integer"
+          },
+          "fat": {
+            "type": "integer"
+          },
+          "protein": {
+            "type": "integer"
+          },
+          "sugar": {
+            "type": "integer"
+          },
+          "fiber": {
+            "type": "integer"
+          },
+          "updated_at": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "calories",
+          "carbohydrates",
+          "fat",
+          "protein",
+          "sugar",
+          "fiber",
+          "updated_at"
+        ]
+      }
+    },
+    "required": [
+      "approved_at",
+      "aspect_ratio",
+      "beauty_url",
+      "brand_id",
+      "buzz_id",
+      "cook_time_minutes",
+      "country",
+      "created_at",
+      "description",
+      "draft_status",
+      "id",
+      "inspired_by_url",
+      "is_one_top",
+      "is_shoppable",
+      "keywords",
+      "language",
+      "name",
+      "num_servings",
+      "prep_time_minutes",
+      "promotion",
+      "seo_title",
+      "servings_noun_plural",
+      "servings_noun_singular",
+      "show_id",
+      "slug",
+      "thumbnail_url",
+      "tips_and_ratings_enabled",
+      "total_time_minutes",
+      "updated_at",
+      "video_id",
+      "video_url",
+      "yields",
+      "nutrition_visibility",
+      "compilations",
+      "brand",
+      "total_time_tier",
+      "instructions",
+      "sections",
+      "tags",
+      "user_ratings",
+      "credits",
+      "original_video_url",
+      "video_ad_content",
+      "canonical_id",
+      "show",
+      "facebook_posts",
+      "renditions",
+      "nutrition"
+    ]
+  }
