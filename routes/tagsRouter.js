@@ -68,20 +68,32 @@ tagsRouter.route('/job')
 
 
 tagsRouter.get('/tagfeed', function (req, res, next) {
-    console.log("here")
-    Tag.find({id:req.query.id}).populate({
-        path:'recipes_feed',
+   /*  console.log(typeof(parseFloat(req.query.from)))
+    console.log(typeof(10)) */
+    Tag.find({ id: req.query.id }).populate({
+        path: 'recipes_feed',
         options: {
+            //$skip: req.query.from,
             limit: 10,
             //sort: { created: -1},
-            skip: req.params.from
-    
+            //
+            skip: parseFloat(req.query.from)
         }
-    }).exec((err, posts) => {
+        }).exec((err, posts) => {
         //console.log("Populated User " + posts);
         res.json(posts)
-      })
-      
+    })
+
 });
 
 module.exports = tagsRouter;
+
+
+/* options: {
+    //$skip: req.query.from,
+    limit: 2,
+    //sort: { created: -1},
+    //
+    skip:2
+}
+} */
