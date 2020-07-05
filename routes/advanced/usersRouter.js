@@ -250,13 +250,11 @@ module.exports = userRouter;
 });*/
 
 
-//260133032458-uah3vpg21sq03nhtq51dap37p1sdk9bf.apps.googleusercontent.com
-//Wf9era2C0SgLzHo1jY3Sz49G
-userRouter.get('/verifyserver', function (req, res) {
-	console.log(req.query.email);
-	console.log(req.query.token);
-	var accessToken = req.query.token;
-	request(`https://www.googleapis.com/oauth2/v3/tokeninfo?access_token=${accessToken}`, function (err, response, body) {
+
+userRouter.get('/verifyserver/:email/:token', function (req, res) {
+	console.log(req.params.email + req.params.token);
+	var accessToken = req.params.token;
+	request(`https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=${accessToken}`, function (err, response, body) {
 		console.log(body);
 		console.log(response.statusCode);
 		var obj = JSON.parse(body);
@@ -273,7 +271,7 @@ userRouter.get('/verifyserver', function (req, res) {
 			});
 		}
 
-		if (obj.email == req.query.email) {
+		if (obj.email == req.params.email) {
 			User.findOne({ username: obj.email }, function (err, user) {
 				if (err) console.log('Something wrong with user find');
 				console.log(user);

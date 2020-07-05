@@ -6,8 +6,10 @@ var Tag = require('../models/tags');
 var Recipe = require('../models/recipe');
 var tagsRouter = express.Router();
 const axios = require("axios");
-
+var Verify = require('./verify');
 var request = require("request");
+var User = require('../models/user');
+
 
 tagsRouter.route('/')
     // get the list of all categories (all users)
@@ -70,6 +72,7 @@ tagsRouter.route('/job')
 tagsRouter.get('/tagfeed', function (req, res, next) {
    /*  console.log(typeof(parseFloat(req.query.from)))
     console.log(typeof(10)) */
+    console.log("here")
     Tag.find({ id: req.query.id }).populate({
         path: 'recipes_feed',
         options: {
@@ -86,6 +89,53 @@ tagsRouter.get('/tagfeed', function (req, res, next) {
 
 });
 
+tagsRouter.route('/alltags')  
+    .get(function (req, res, next) {
+        Tag.find({}, function (err, recipe) {
+            if (err) console.log('Something wrong with MenuItems.get:shortName');
+            console.log(recipe.length)       
+             res.json(recipe)
+        });
+    })
+
+
+
+tagsRouter.route('/fav')  
+    .get(function (req, res, next) {
+        console.log("postID")
+        console.log(req.query.id)
+        console.log(req.query.postId)
+        User.findOneAndUpdate({ username: req.query.id }, { $addToSet: { fav_feed: req.query.postId } }, function (err, tagg) {
+            
+            if (err) throw err;
+            console.log("postID")
+            console.log("working for")
+           
+
+        });
+    })
+
+    tagsRouter.get('/favget', function (req, res, next) {
+        /*  console.log(typeof(parseFloat(req.query.from)))
+         console.log(typeof(10)) */
+         console.log("here")
+         User.find({ username: req.query.id }).populate({
+             path: 'fav_feed',
+             options: {
+                 //$skip: req.query.from,
+                 limit: 10,
+                 //sort: { created: -1},
+                 //
+                 skip: parseFloat(req.query.from)
+             }
+             }).exec((err, posts) => {
+             //console.log("Populated User " + posts);
+             res.json(posts)
+         })
+     
+     });
+     
+
 module.exports = tagsRouter;
 
 
@@ -97,3 +147,6 @@ module.exports = tagsRouter;
     skip:2
 }
 } */
+
+
+

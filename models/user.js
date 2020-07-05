@@ -26,7 +26,16 @@ var User = new Schema({
 	admin: {
 		type: Boolean,
 		default: false
-	}
+	}, fav_feed: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Recipe',
+       // unique: true
+	}]
+	, lastViewed_feed: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Recipe',
+       // unique: true
+    }]
 }, {timestamps: true});
 
 User.plugin(passportLocalMongoose);

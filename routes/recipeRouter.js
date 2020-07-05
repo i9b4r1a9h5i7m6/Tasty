@@ -146,7 +146,31 @@ recipeRouter.get('/tag/', function (req, res, next) {
 
 
 
+recipeRouter.route('/search/:search')  
+    .get(function (req, res, next) {
+        console.log("Searching name")
+        var a = req.params.search
+        Recipe.find({ name:{'$regex': a, '$options' : 'i'} }, function (err, recipe) {
+            if (err) console.log('Something wrong with MenuItems.get:shortName');
+            console.log(recipe.length)
+            
+          
+            res.json(recipe)
+        }).limit(20);
+    })
 
-
+ //add views   
+ recipeRouter.route('/view/:id')
+    .get(function (req, res, next) {
+        console.log("Searching name")
+        var a = req.params.search
+        Recipe.find({ id:req.params.id}, function (err, recipe) {
+            if (err) console.log('Something wrong with MenuItems.get:shortName');
+            console.log(recipe.length)
+            
+          
+            res.json(recipe)
+        })
+    })
 
 module.exports = recipeRouter;
